@@ -24,6 +24,17 @@
     </div>
     <button type="submit" class="btn btn-primary">Submito</button>
 </form>
+<div id="app">
+  {{ message }}
+</div>
 <script src="js/bootstrap.min.js"></script>
+<script>
+var app = new Vue({
+  el: '#app',
+  data: {
+    message: 'Olá Vue!'
+  }
+})
+</script>
 </body>
 </html>
